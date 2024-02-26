@@ -1,15 +1,19 @@
-const handleClick = () => {
-    const bts = document.querySelectorAll("section > div > img");
-    const btsNum = [1,1,1];
+const handleClick = (n) => {
+    const img1 = document.querySelector("#img1");
+    const img2 = document.querySelector("#img2");
 
-    //for of
-    for(let [idx, bt] of bts.entries()) {
-        const n = Math.floor(Math.random() * 6) + 1;
-        bt.setAttribute("src", `./img/${n}.png`);
-        btsNum[idx] = n;
 
-        console.log(btsNum);
-        }
+    const nc = Math.floor(Math.random() * 6) + 1;
+
+    img1.setAttribute("src", `./img/${nc}.png`);
+    img2.setAttribute("src", `./img/${n}.png`);
+    
+    if (n == nc) {
+        document.querySelector("#msg").innerHTML = "맞음";
+    } else {
+        document.querySelector("#msg").innerHTML = "틀림";
+    }
+}
 
     //for of => 파이썬의 for in 
     // for(let bt of bts) {
@@ -38,5 +42,3 @@ const handleClick = () => {
     //     bt.setAttribute("src", `./img/${n}.png`);
     //     console.log("click", n);
     // });
-
-}
