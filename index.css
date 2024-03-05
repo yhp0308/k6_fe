@@ -1,76 +1,84 @@
 * {
     padding: 0px;
     margin: 0px;
-  }
-  
-  main {
+}
+
+main {
     width: 60%;
     margin-left: 20%;
-  }
-  
-  header {
-    background-color:midnightblue;
+}
+
+header {
+    background-color: rgb(110, 109, 109);
     color: white;
     height: 100px;
+    padding: 0px 20px;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 20px;
-  }
-  
-  article {
-    display: flex;
-    flex-direction: column; 
-    align-items: center;
-  }
-  
-  article ul {
-    width: 80%;
-    background-color: beige;
-    margin-top: 20px;
-    list-style: none;
-  }
-  article li {
-    display: flex;
-    align-items: center;
-    height: 20px;
-    border: 1px dotted gray;
-    padding: 10px;
-  }
-  article a {
-    text-decoration: none;
-    color: black;
-  }
-  
-  article li:hover {
-    background-color: goldenrod;
-    color: white;
-  }
-  
-  section {
+}
+
+article {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  }
-  section > h1 {
+}
+
+article ul {
+    width: 70%;
+    background-color: beige;
+    margin-top: 20px;
+    list-style: none;
+}
+
+article a {
+    text-decoration: none;
+}
+
+article li {
+    height: 15px;
+    border: 1px dotted grey;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+}
+
+article li:hover {
+    background-color: rgb(240, 188, 170);
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section > h1 {
     display: flex;
     padding: 20px;
     justify-content: center;
     align-items: center;
-  }
-  
-  section > div {
+    border: 1px dotted grey;
     width: 80%;
+    background-color: rgb(230, 241, 245);
+    margin-top: 10px;
+}
+
+section > div {
     display: flex;
+    width: 80%;
+    
     justify-content: center;
     align-items: center;
     border: 1px dotted gray;
     padding: 20px;
     margin: 10px;
-  }
-  
-  header > div > a {
+}
+
+header > div > a {
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -82,3 +90,4 @@
     width: 60px;
     
   }
+
