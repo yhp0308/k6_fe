@@ -133,3 +133,7 @@ console.log("arr3 =", arr3);
 // Map 과 Filter는 배열만 가능하다. 함수가 되면 배열로 바꿔야한다.
 // list(tupl) - dict (Python) - 이걸 잘 해야한다.
 // arr - obj (JavaScript)
+
+//전개 연산자
+let arr22 = [...arr] ; //... 연산자가 전개연산자다. (전개시키는 것)
+console.log("전개 연산자 : " , arr22);
